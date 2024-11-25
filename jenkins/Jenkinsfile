@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent { 'label' ramesh }
   
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'master', description: 'Enter the branch name to build')
